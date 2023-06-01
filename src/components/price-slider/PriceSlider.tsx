@@ -10,7 +10,7 @@ const PriceSlider = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="slider-wrapper">
       <div className="amount">
         <sup>$</sup>
         <span className="dollars">{value}</span>

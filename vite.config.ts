@@ -11,6 +11,7 @@ export default defineConfig({
       exposes: {
         "./KeyPressChecker": "./src/components/key-press-checker/KeyPressChecker",
         "./PriceSlider": "./src/components/price-slider/PriceSlider",
+        "./TipCalculator": "./src/components/tip-calculator/TipCalculator"
       },
       shared: ["react", "react-dom"],
     }),

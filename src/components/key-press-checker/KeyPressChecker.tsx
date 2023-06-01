@@ -40,35 +40,37 @@ const Keyboard = () => {
   };
 
   return (
-    <div className="keyboard">
+    <div className="key-press-checker-wrapper">
       <h1>Eyes on the Screen</h1>
-      <div className="row">
-        {keyboardKeys.slice(0, 14).map((key) => (
-          <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} key={key}>
-            {key}
-          </button>
-        ))}
-      </div>
-      <div className="row">
-        {keyboardKeys.slice(14, 28).map((key) => (
-          <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} data-key={key} key={key}>
-            {key}
-          </button>
-        ))}
-      </div>
-      <div className="row">
-        {keyboardKeys.slice(28, 41).map((key) => (
-          <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} data-key={key} key={key}>
-            {key}
-          </button>
-        ))}
-      </div>
-      <div className="row">
-        {keyboardKeys.slice(41, keyboardKeys.length).map((key, index) => (
-          <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} data-key={key} key={key + index}>
-            {key}
-          </button>
-        ))}
+      <div className="keyboard">
+        <div className="row">
+          {keyboardKeys.slice(0, 14).map((key) => (
+            <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} key={key}>
+              {key}
+            </button>
+          ))}
+        </div>
+        <div className="row">
+          {keyboardKeys.slice(14, 28).map((key) => (
+            <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} data-key={key} key={key}>
+              {key}
+            </button>
+          ))}
+        </div>
+        <div className="row">
+          {keyboardKeys.slice(28, 41).map((key) => (
+            <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} data-key={key} key={key}>
+              {key}
+            </button>
+          ))}
+        </div>
+        <div className="row">
+          {keyboardKeys.slice(41, keyboardKeys.length).map((key, index) => (
+            <button className={`key ${key === wiggleKey ? 'jiggle' : ''}`} data-key={key} key={key + index}>
+              {key}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

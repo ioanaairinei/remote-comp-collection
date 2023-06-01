@@ -1,10 +1,10 @@
 import './App.css';
-import PriceSlider from './components/price-slider/PriceSlider';
+import KeyPressChecker from './components/key-press-checker/KeyPressChecker';
 
 function App() {
   return (
     <div>
-      <PriceSlider />
+      <KeyPressChecker />
     </div>
   );
 }
