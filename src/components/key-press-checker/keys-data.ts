@@ -52,4 +52,4 @@ export const KEYBOARD_KEYS = [
   '.',
   '/',
   'SHIFT',
-]
+];

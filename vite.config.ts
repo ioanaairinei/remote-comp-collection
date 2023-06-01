@@ -10,6 +10,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./KeyPressChecker": "./src/components/key-press-checker/KeyPressChecker",
+        "./PriceSlider": "./src/components/price-slider/PriceSlider",
       },
       shared: ["react", "react-dom"],
     }),
