@@ -17,5 +17,5 @@ npm run build
 ```
 
 ```shell
-npm run build
+npm run preview
 ```
